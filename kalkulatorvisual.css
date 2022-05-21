@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@100;400;700&display=swap');
+html {
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+*::beforea,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(42, 42, 122, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    box-shadow: 100px 8px 24px 0px rgba(66, 68, 90, 1);
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 60vh;
+    min-width: 370px;
+    max-width: 370px;
+    padding-bottom: 20px;
+}
+
+.wyswietlacz {
+    width: 100%;
+    min-height: 20%;
+    background-color: rgb(90, 163, 247);
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.obecnaliczba {
+    font-size: 35px;
+}
+
+.podanaliczba {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(90, 163, 247);
+    margin-bottom: 0, 0;
+}
+
+.panelk {
+    display: grid;
+    height: 80%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.panelk button {
+    font-size: 25px;
+    background-color: rgb(90, 163, 247);
+    color: white;
+    cursor: pointer;
+    border: beige;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(20, 60, 236);
+}
+
+.number0 {
+    grid-column: 2/5;
+}
+
+.equals {
+    grid-row: 4/6;
+}
